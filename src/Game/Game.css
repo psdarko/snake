@@ -1,0 +1,43 @@
+.Game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.GameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,0.8);
+}
+.GameSpace {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  box-shadow: 0 0 0 4px rgb(255, 109, 84)
+}
+
+.Snake {
+  background-color: rgba(13, 81, 177, 0.80);
+}
+.Snake.head {
+  background-color: rgba(13, 81, 177, 1);
+}
+.Snake.head.left {
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.Snake.head.right {
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.Snake.head.down {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.Snake.head.up {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}

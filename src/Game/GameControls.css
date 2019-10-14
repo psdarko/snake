@@ -1,0 +1,36 @@
+.GameControls {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 16px 50px;
+  text-align: left;
+}
+.GameControls .field + .field {
+  margin-left: 16px;
+}
+.GameControls .field-label + .field-controls {
+  margin-top: 8px;
+}
+.GameControls .field button + button {
+  margin-left: 8px;
+}
+.GameControls .field button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+  background-color: #6495ed;
+  font-size: 16px;
+  color: rgba(0,0,0,.84);
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+.GameControls .field button:hover {
+  background-color: #5a7bcc;
+}
+.GameControls .field button:disabled:hover {
+  background-color: #6495ed;
+}
+.GameControls .field button:disabled {
+  color: rgba(0,0,0,.4);
+  cursor: not-allowed;
+}
