@@ -102,7 +102,7 @@ export default function Game() {
     height: windowHeight,
   } = useWindowSize();
   const gameSpaceRatio = game.width / game.height;
-  const windowRatio = windowWidth / windowHeight;
+  const windowRatio = (windowWidth - 100) / (windowHeight - 200);
   let width = game.width;
   let height = game.height;
   if (windowRatio > gameSpaceRatio) {
